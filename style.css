@@ -1,0 +1,255 @@
+*
+{
+	margin: 0;
+}
+body
+	{
+		background-color:#b0aeb1;
+		color: #0c1319;
+	}
+
+header
+	{
+		display: flex;
+		background-color:#171b1e;
+		background-size: cover;
+		background-repeat: no-repeat;
+		justify-content: center;
+		align-items: center ;
+		margin: 10px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border: 8px solid #ad8653;
+		border-radius: 50px;
+		box-shadow: 5px 10px;
+	}
+	
+header img 
+	{
+		
+		height: 250px;
+		width: 400px;
+	}
+	
+#wrapper
+	{
+		padding: 15px;
+		margin-left:10%;
+		margin-right:10%;
+		height: 100%;
+		background-color: #d7d1cd;
+		border: 8px solid #ad8653;
+		border-radius: 50px;
+		box-shadow: 5px 0px 5px 0px;
+		padding: 7%;
+	}
+	
+#Tymofiy
+
+	{
+		display:flex;
+	justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		font-family: 'Alice', serif;
+		margin: 0px 0px 10px 0px ;
+	}	
+	
+#TimaImg
+
+	{
+		border: 10px solid;
+		background-color:#b0aeb1;
+		border-color: #ad8653 ;
+		border-radius: 150px;
+		margin-top: -50px;
+		width:200px;
+		height:200px;
+		box-shadow: 5px 10px;
+	}
+#TimaImg:hover
+	{
+		border: 10px solid;
+		background-color:#171b1e;
+		border-color: #ad8653 ;
+		border-radius: 150px;
+		margin-top: -50px;
+		width:200px;
+		height:200px;
+		box-shadow: 0px 0px;
+	}
+#TB
+	{
+		margin-top:10px;
+	}
+	
+#StageM
+{
+	display: flex;
+}
+
+#myPopup img
+{
+	height:20px;
+	width:20px;
+}
+#StMag
+{
+	display:flex;
+	justify-content: center;
+	align-items: center ;
+}
+#StMagVid
+{
+	float: left;
+	border: 4px solid #ad8653;
+	border-radius: 10px;
+	width: 50%;
+	height:50%;
+}
+#StMagText
+{
+		margin:10px;
+		width:300px;
+		height:300px;
+}
+#Close-Up
+{
+	clear: both;
+}
+
+#Close-UpVid
+{
+	display: flex;
+	width:100%;
+}
+.vid
+{
+	border: 4px solid #ad8653;
+	border-radius: 10px;
+	width:30%;
+	margin: 5px;
+}
+.three-columns
+	{
+		width:30%;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: row;
+		margin: 5px;
+		
+	}
+	
+.Heading
+{
+	margin: 5%;
+	font-family: 'Kaushan Script', cursive;
+	
+	padding:4px;
+}
+
+.GifImg
+	{	
+		border: 5px solid #ad8653;
+		border-radius: 10px;
+		width:100%;
+		height: 49%;
+			
+	}
+
+.text
+	{
+		font-family: 'Noto Sans', sans-serif;
+		padding:10px;
+		border: 5px solid #ad8653;
+		border-radius: 10px;
+	}
+	
+.popup 
+	{
+
+	  position: relative;
+	  cursor: pointer;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	  width:30%;
+	}
+.popup .popuptext
+	 {
+	  visibility: hidden;
+	  width: 160px;
+	  background-color: #b0aeb1;
+	  color: #0c1319;
+	  text-align: Left;
+	  border-radius: 6px;
+	  padding: 8px;
+	  position: absolute;
+	  z-index: 1;
+	  bottom: 125%;
+	  left: 50%;
+	  margin-left: -80px;
+	}
+
+.popup .popuptext::after 
+	{
+	  content: "";
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  margin-left: -5px;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-color: #555 transparent transparent transparent;
+	}
+	
+.popup .show 
+	{
+		visibility: visible;
+		-webkit-animation: fadeIn 1s;
+		animation: fadeIn 1s;
+	}
+
+	
+@-webkit-keyframes fadeIn 
+	{
+	  from {opacity: 0;} 
+	  to {opacity: 1;}
+	}
+
+@keyframes fadeIn 
+	{
+	  from {opacity: 0;}
+	  to {opacity:1 ;}
+	}
+	
+@media only screen and (max-width: 780px)
+{
+	#StMagText 
+	{ 
+		height: 100px;
+		width:100px;
+		display:none;
+	}
+	#StMagVid
+	{
+		width: 100%;
+		height:100%;
+	}
+
+	#StageM
+	{
+		align-items: center;
+		flex-direction: column;
+	}
+	.three-columns
+	{
+		width: 100%;
+	}
+	#body
+	{
+		background:#0b141b1;
+	}
+}

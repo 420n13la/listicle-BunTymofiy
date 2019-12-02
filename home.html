@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Young Magician Guide </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" href="images/favicon.ico" type="image/ico">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alice&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+	</head>  
+  
+	<body id = "body">
+		<header>
+			<img src = "images/background.png">
+		</header>
+		
+		<main>
+			<div id = "Tymofiy">
+				<div class="popup" onclick="myFunction()" >
+					<img id = "TimaImg" src = "images/tima_logo.png">
+					<span class="popuptext" id="myPopup">
+					Tymofiy Bun <br> Call Me <a href = "tel:+15145698303"><img src = "images/PhoneIcon.png"></a><br>
+					Contact Me<a href = "mailto:tima.boon@gmail.com"><img src = "images/MailIcon.png"></a>
+							  <a href = "https://www.facebook.com/tima.boon"><img src = "images/Facebook.png"></a>
+					</span>
+					<p id = "TB">Tymofiy Bun</p>
+				</div>
+				
+				
+			</div>
+			
+			<div id = "wrapper">
+				<div>
+					<h2 class = "Heading">1. Intro</h2>
+					<p class = "text">This website's purpose is to help and guide young magician who are just discovering the world on magic. 
+					On this website you will learn the difference between some kind of perfomence styles.</p>
+				</div>
+			
+				<div>
+					<h2 class = "Heading">2. Stage Magic</h2>
+					
+					<div id = "StageM">
+						<div class="three-columns">						
+								<img class = "GifImg" src="images/ShinLim.gif"></br>
+								<img class = "GifImg" src="images/AGT.gif">						
+						</div>
+						
+						<div class="three-columns">							
+								<p id = "3olText" class = "text"> Stage Magic, is a kind of magic that is performed only on the stage. The main reason we make this division, 
+								because some tricks require quite a few special details. 
+								For example most of those tricks need a lot of space, need the spectator remain in front of you and require quite large equipment. 
+								Like a large cage or an aquarium.</p>						
+						</div>
+						
+						<div class="three-columns">					
+							<img class = "GifImg" src="images/AGT2.gif"></br>
+							<img class = "GifImg" src="images/Ericchien.gif">	
+						</div>
+					</div>	
+				</div>	
+				
+				<h2 class = "Heading">3. Street Magic</h2>
+				
+				<div id = "StMag">
+					<video id= "StMagVid"  controls>
+						<source src="video/STREETMAG.mp4" type="video/mp4">					
+						Your browser does not support the video tag.
+					</video>
+					
+					<div id = "StMagText">
+						<p class = "text">
+							Street Magic is a section between stage and close-up because they are performed for a small group of people but more that three. 
+							Moreover, usually it take place outside, but those can be executed at any place like home, bar or a party. 
+							A particularity about this category is those tricks are universal, therefore, it’s possible to perform them in almost any situation.
+						</p>	
+					</div>
+				</div>
+			
+				<div id = "Close-Up">
+					<h2 class = "Heading">4. Close-Up Magic</h2>
+					<p class = "text">
+					Close-Up, is the most common nowadays because  for those kind of tricks it’s way easier to find an audience. 
+					Another bonus is that you don’t have to carry a lot of gimmicks on you and mostly object that you can borrow.
+					</p>
+				<div id = "Close-UpVid">
+						<video class = "vid"  controls>
+							<source  src="video/Rubick'sCube.mp4" type="video/mp4">					
+							Your browser does not support the video tag.
+						</video>
+						
+						<video class = "vid" controls>
+							<source  src="video/Sharpie.mp4" type="video/mp4">					
+							Your browser does not support the video tag.
+						</video>
+						
+						<video class = "vid"  controls>
+							<source src="video/CloseUpMagic.mp4" type="video/mp4">					
+							Your browser does not support the video tag.
+						</video>
+				</div>		
+			</div>
+		</main>
+	</body>
+</html>
+
+<script>
+function myFunction() 
+{
+  var popup = document.getElementById("myPopup");  
+  popup.classList.toggle("show");
+}
+</script>
